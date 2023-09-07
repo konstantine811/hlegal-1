@@ -1,0 +1,162 @@
+@import './components/variable.scss';
+
+.target {
+	padding: 30px 0;
+
+	&_section {
+	}
+
+	&_menu {
+		gap: 30px;
+	}
+
+	&_list {
+		gap: 30px;
+		padding-left: 30px;
+		white-space: nowrap;
+		overflow-y: hidden;
+		overflow-x: auto;
+	}
+
+	&_list::-webkit-scrollbar {
+		width: 0;
+		height: 0;
+	}
+
+	&_list::-webkit-scrollbar-track {
+		background: transparent;
+	}
+
+	&_list::-webkit-scrollbar-thumb {
+		background: transparent;
+	}
+
+	&_btn {
+		background-color: transparent;
+	}
+
+	&_btn-active {
+		background: $gr-txt-r;
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+
+	&_line {
+		background-color: $bg-line;
+		height: 4px;
+	}
+
+	&_box {
+		gap: 30px;
+		padding: 0 30px;
+		max-width: 100%;
+		width: 100%;
+	}
+
+	&_box-line {
+		padding: 0 30px;
+	}
+
+	&_title {
+	}
+
+	&_text {
+		line-height: 3rem;
+	}
+}
+
+@media (min-width: 768px) {
+
+	.target {
+		padding: 60px 0;
+		&_menu {
+			gap: 60px;
+		}
+
+		&_list {
+			padding-left: 60px;
+		}
+
+		&_box {
+			padding: 0 60px;
+		}
+
+		&_box-line {
+			padding: 0 60px;
+		}
+
+		&_btn {
+			font-size: 3.8rem;
+		}
+
+		&_title {
+			font-size: 3rem;
+		}
+	}
+
+}
+
+@media (min-width: 1024px) {
+
+	.target {
+		padding: 60px;
+		&_box-line {
+			width: 4px;
+		}
+
+		&_box-line {
+			padding: 0px;
+		}
+
+		&_line {
+			height: 100%;
+			width: 4px;
+		}
+
+		&_menu {
+			flex-direction: row;
+			justify-content: center;
+			gap: 60px;
+		}
+
+		&_list {
+			flex-direction: column;
+			align-items: end;
+			max-width: 375px;
+			width: 100%;
+			padding: 0;
+		}
+
+		&_box {
+			padding: 0;
+			max-width: 405px;
+		}
+	}
+
+}
+
+@media (min-width: 1440px) {
+	
+	.target {
+		padding: 60px 180px;
+
+		&_box {
+			justify-content: center;
+			max-width: 581px;
+		}
+	}
+
+}
+
+@media (min-width: 1920px) {
+
+	.target {
+		padding: 60px 280px;
+
+		&_box {
+			max-width: 861px;
+		}
+	}
+
+}

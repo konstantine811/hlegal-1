@@ -1,0 +1,19 @@
+.nav {
+	display: none;
+}
+
+@media (min-width: 768px) {
+	
+	.nav {
+		display: block;
+		&_list {
+			display: flex;
+			gap: 15px;
+		}
+	
+		&_item {
+		}
+	}
+	
+
+}

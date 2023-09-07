@@ -1,0 +1,95 @@
+.hillel {
+	background: #1C4280;
+}
+
+.wanna-biz {
+	background: #143646;
+}
+
+.tapgerine {
+	background: linear-gradient(0deg, #F48B30 0%, #F48B30 100%), #F48B30;
+}
+
+.look {
+	background: #9E4DC3;
+}
+
+.orangear {
+	background: #FD9339;
+}
+
+.adtelligent {
+	background: #E2E2E4;
+}
+
+.clickky {
+	background: #C71C36;
+}
+
+.eco-leasing {
+	background: #DCF3F9;
+}
+
+.infra-tek {
+	background: #EAEAEA;
+}
+
+.city-park {
+	background: #282240;
+}
+
+.art-print-studio {
+	background: #1D4568;
+}
+
+.ultimate-card {
+	background: #000;
+}
+
+
+.trust {
+
+	&_box {
+		width: 100%;
+		height: 120px;
+	}
+
+	&_none {
+		display: none;
+	}
+
+	&_img {
+	}
+}
+
+@media (min-width: 768px) {
+
+	.trust {
+
+		&_none {
+			display: flex;
+		}
+
+		&_box {
+			max-width: 256px;
+		}
+
+	}
+
+}
+
+@media (min-width: 1440px) {
+	
+	.trust_box {
+		max-width: 360px;
+	}
+
+}
+
+@media (min-width: 1920px) {
+	
+	.trust_box {
+		max-width: 430px;
+	}
+
+}

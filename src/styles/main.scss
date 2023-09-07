@@ -1,0 +1,57 @@
+@import './components/variable.scss';
+
+.main {
+	position: relative;
+	z-index: 1;
+
+	&_title {
+		padding: 129px 0px 159px 0px;
+		max-width: 200px;
+		text-align: center;
+	}
+
+	&_link {
+		width: 42px;
+		height: 42px;
+		border-radius: 50%;
+		border: 2px solid $grey-text;
+		margin-bottom: 30px;
+	}
+
+	&_img {
+	}
+}
+
+@media (min-width: 768px) {
+	
+	.main_title {
+		padding: 269px 0px 417px 0px;
+		max-width: 100%;
+	}
+
+}
+
+
+@media (min-width: 1024px) {
+	
+	.main_title {
+		padding: 245px 0px 289px 0px;
+	}
+
+}
+
+@media (min-width: 1440px) {
+	
+	.main_title {
+		padding: 261px 0px 305px 0px;
+	}
+
+}
+
+@media (min-width: 1920px) {
+	
+	.main_title {
+		padding: 361px 0px 405px 0px;
+	}
+
+}

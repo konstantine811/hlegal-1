@@ -1,0 +1,84 @@
+@import './variable.scss';
+
+.hero {
+	background: $gradient-red-text;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.m-r {
+	color: $main-regular;
+}
+
+.m-a {
+	color: $main-alt;
+}
+
+.m-s {
+	color: $main-soft;
+}
+
+.ac {
+	color: $accent;
+}
+
+.ac-bg {
+	background-color: $accent;
+}
+
+.a-r {
+	background-color: $active-regular;
+}
+
+.a-h {
+	background-color: $active-hover;
+}
+
+.a-a {
+	color: $active-active;
+}
+
+.g-bg {
+	background-color: $grey-bg;
+}
+
+.g-bg-alt {
+	background-color: $grey-bg-alt;
+}
+
+.g-t {
+	color: $grey-text;
+}
+
+.g-s {
+	background-color: $grey-separator;
+}
+
+.gr-r {
+	background-color: $gradient-regular;
+}
+
+.gr-s {
+	background-color: $gradient-soft;
+}
+
+.gr-red {
+	background-color: $gradient-red;
+}
+
+.gr-s-s {
+	background: $gradient-super-soft;
+}
+
+.gr-r-t {
+	background-color: $gradient-red-text;
+}
+
+.w {
+	color: #fff;
+}
+
+.h-bg {
+	background: rgba(245, 245, 250, 0.20);
+}

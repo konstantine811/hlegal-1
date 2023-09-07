@@ -1,0 +1,43 @@
+@import './components/variable.scss';
+
+.burger {
+	width: 32px;
+	height: 32px;
+	transform: rotate(0deg);
+	transition: .3s;
+	&_line {
+		height: 4px;
+		width: 27px;
+		background-color: $w;
+	}
+}
+
+.burger:active {
+	transform: rotate(90deg);
+	transition: .3s;
+}
+
+.burger:hover .burger_line {
+	background-color: $active-active;
+	transition: .3s;
+}
+
+@media (min-width: 768px) {
+	
+	.burger {
+		display: none;
+	}
+
+}
+
+@media (min-width: 1140px) {
+	.burger:hover {
+		transform: rotate(90deg);
+		transition: .3s;
+	}
+
+	.burger:hover .burger_line {
+		background-color: $active-active;
+		transition: .3s;
+	}
+}
