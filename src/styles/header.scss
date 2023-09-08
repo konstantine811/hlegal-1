@@ -170,6 +170,10 @@
 			gap: 16px;
 		}
 
+		&_address {
+			color: $basic-white;
+		}
+
 		&_info {
 			grid-area: 1 / 2 / 2 / 3;
 			justify-content: end;
