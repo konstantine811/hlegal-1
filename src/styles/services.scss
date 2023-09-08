@@ -63,7 +63,7 @@
 
 		&_box {
 			gap: 60px;
-			justify-content: space-between;
+			justify-content: center;
 		}
 
 		&_card {
@@ -99,11 +99,11 @@
 	.services {
 
 		&_card {
-			max-width: 400px;
+			max-width: 370px;
 		}
 
 		&_box {
-			justify-content: center;
+			justify-content: space-between;
 		}
 
 	}

@@ -40,13 +40,13 @@ export default defineConfig({
           },
         },
         {
-          entry: '/pages/about/about.js',
-          filename: 'pages/about/about.html',
-          template: '/pages/about/about.html',
+          entry: 'pages/service/service.js',
+          filename: 'pages/service/service.html',
+          template: '/pages/service/service.html',
           injectOptions: {
             data: {
               title: 'About',
-              injectScript: `<script src="./about.js"></script>`,
+              injectScript: `<script src="./service.js"></script>`,
             },
           },
         },
