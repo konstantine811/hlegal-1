@@ -1,0 +1,95 @@
+@import '../../../styles/components/variable.scss';
+
+.main {
+	padding: 30px 0;
+
+	&_container {
+		max-width: 315px;
+		width: 100%;
+		gap: 28px;
+	}
+
+	&_img {
+		padding: 14px;
+		background-color: $basic-white;
+		border-radius: 24px;
+	}
+
+	&_title {
+		background: $gradient-red-text;
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+
+	&_para {
+		line-height: 3rem;
+		text-align: center;
+	}
+
+	&_link {
+		background-color: $active-active;
+		padding: 18px 30px;
+		border-radius: 12px;
+		transition: .3s;
+
+		&:active {
+			transition: .3s;
+			background-color: $active-active;
+			box-shadow: 0px 0px 20px 0px rgba(36, 163, 255, 0.50);
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	
+	.main {
+		padding: 60px 0;
+
+		&_container {
+			max-width: 648px;
+		}
+
+		&_title {
+			font-size: 3.8rem;
+		}
+
+	}
+
+}
+
+@media (min-width: 1024px) {
+	
+	.main {
+
+		&_container {
+			max-width: 904px;
+		}
+
+	}
+
+}
+
+@media (min-width: 1440px) {
+	
+	.main {
+
+		&_container {
+			max-width: 1080px;
+		}
+
+	}
+
+}
+
+@media (min-width: 1920px) {
+	
+	.main {
+
+		.container {
+			max-width: 1360px;
+		}
+
+	}
+
+}

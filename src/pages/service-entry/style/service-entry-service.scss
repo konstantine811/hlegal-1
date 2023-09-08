@@ -1,0 +1,33 @@
+.service {
+
+	&_container {
+		border-top: 4px solid $service-line;
+	}
+
+	&_title {
+		padding: 30px 0;
+	}
+
+	&_list {
+		gap: 15px;
+	}
+
+	&_item {
+		display: flex;
+		justify-content: space-between;
+		gap: 8px;
+		max-width: 301px;
+		line-height: 2.6rem;
+
+		&::before {
+			margin-top: 12px;
+			content: '';
+			display: block;
+			width: 6px;
+			height: 6px;
+			border-radius: 50%;
+			background-color: $accent;
+			padding-left: 7px;
+		}
+	}
+}
