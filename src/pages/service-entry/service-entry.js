@@ -1,0 +1,1 @@
+import './service-entry.scss';

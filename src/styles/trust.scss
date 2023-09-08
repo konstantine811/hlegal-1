@@ -58,6 +58,14 @@
 		display: none;
 	}
 
+	&_title {
+		padding-bottom: 30px;
+	}
+
+	&_container {
+		width: 100%;
+	}
+
 	&_img {
 	}
 }
@@ -72,6 +80,28 @@
 
 		&_box {
 			max-width: 256px;
+			width: 100%;
+		}
+
+		&_container {
+			max-width: 768px;
+		}
+
+	}
+
+}
+
+@media (min-width: 1024px) {
+
+	.trust {
+
+		&_box {
+			max-width: 256px;
+			width: 100%;
+		}
+
+		&_container {
+			max-width: 1024px;
 		}
 
 	}
@@ -79,17 +109,34 @@
 }
 
 @media (min-width: 1440px) {
-	
-	.trust_box {
-		max-width: 360px;
+
+	.trust {
+
+		&_box {
+			max-width: 360px;
+		}
+
+		&_container {
+			max-width: 1440px;
+		}
+
 	}
 
 }
 
 @media (min-width: 1920px) {
-	
-	.trust_box {
-		max-width: 430px;
+
+	.trust {
+		padding-bottom: 60px;
+
+		&_box {
+			max-width: 430px;
+			width: 100%;
+		}
+
+		&_container {
+			max-width: 1920px;
+		}
 	}
 
 }
