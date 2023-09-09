@@ -1,33 +1,121 @@
-.service {
+@import '../../../styles/components/variable.scss';
 
-	&_container {
-		border-top: 4px solid $service-line;
-	}
+.service {
 
 	&_title {
 		padding: 30px 0;
+		border-top: 4px solid $service-line;
+	}
+
+	&_flex {
+		line-height: 2.6rem;
+		gap: 30px;
 	}
 
 	&_list {
 		gap: 15px;
+		max-width: 315px;
+		width: 100%;
+	}
+
+	&_list-one {
+	}
+
+	&_list-two {
 	}
 
 	&_item {
 		display: flex;
-		justify-content: space-between;
-		gap: 8px;
 		max-width: 301px;
-		line-height: 2.6rem;
-
+		width: 100%;
+		gap: 8px;
 		&::before {
-			margin-top: 12px;
 			content: '';
-			display: block;
 			width: 6px;
 			height: 6px;
 			border-radius: 50%;
 			background-color: $accent;
+			margin-top: 12px;
 			padding-left: 7px;
 		}
 	}
+}
+
+@media (min-width: 768px) {
+	
+	.service {
+
+		&_flex {
+			flex-direction: row;
+			justify-content: center;
+			align-items: start;
+			gap: 60px;
+		}
+
+		&_list {
+			max-width: 293px;
+		}
+
+		&_item {
+			max-width: 280px;
+		}
+
+	}
+
+}
+
+@media (min-width: 1024px) {
+	
+	.service {
+
+		&_list {
+			max-width: 422px;
+		}
+
+		&_item {
+			max-width: 408px;
+		}
+
+	}
+
+}
+
+@media (min-width: 1440px) {
+
+	.service {
+
+		&_container {
+			padding: 0 180px;
+		}
+
+		&_list {
+			max-width: 510px;
+		}
+
+		&_item {
+			max-width: 496px;
+		}
+
+	}
+
+}
+
+@media (min-width: 1924px) {
+	
+	.service {
+
+		&_container {
+			padding: 0 280px;
+		}
+
+		&_list {
+			max-width: 650px;
+		}
+
+		&_item {
+			max-width: 636px;
+		}
+
+	}
+
 }
