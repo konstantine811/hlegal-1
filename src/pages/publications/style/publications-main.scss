@@ -1,0 +1,50 @@
+@import '../../../styles/components/variable.scss';
+
+.main {
+	margin-top: 10px;
+	&_box {
+		border-radius: 10px;
+		padding: 2px;
+		gap: 2px;
+		margin-bottom: 30px;
+	}
+
+	&_btn {
+		padding: 8px 30px 10px 30px;
+		border-radius: 10px;
+		transition: .3s;
+			
+		&:active {
+			transition: .3s;
+			background-color: $grey-bg;
+		}
+	}
+
+	&_btn-active {
+		background-color: $basic-white;
+	}
+
+	&_link {
+		margin-top: 30px;
+	}
+}
+
+@media (min-width: 768px) {
+	
+	.main {
+		margin-top: 60px;
+	}
+
+}
+
+@media (min-width: 1024px) {
+	
+	.main_btn {
+
+		&:hover {
+			transition: .3s;
+			background-color: $grey-bg;
+		}
+	}
+
+}

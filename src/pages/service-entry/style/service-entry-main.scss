@@ -28,18 +28,6 @@
 		line-height: 3rem;
 		text-align: center;
 	}
-
-	&_link {
-		background-color: $active-active;
-		padding: 18px 30px;
-		border-radius: 12px;
-		transition: .3s;
-
-		&:active {
-			transition: .3s;
-			color: $accent;
-		}
-	}
 }
 
 @media (min-width: 768px) {
@@ -65,13 +53,6 @@
 
 		&_box {
 			max-width: 904px;
-		}
-
-		&_link {
-			&:hover {
-				transition: .3s;
-				color: $accent;
-			}
 		}
 
 	}

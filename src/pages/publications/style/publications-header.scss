@@ -1,0 +1,45 @@
+@import '../../../styles/components/variable.scss';
+
+.publications-header {
+
+	&_info {
+		background-color: $grey-bg;
+	}
+
+	&_address {
+		color: $grey-text;
+	}
+
+	&_box {
+		max-width: 315px;
+	}
+
+	&_slash {
+		display: block;
+	}
+
+	&_name {
+		display: block;
+	}
+
+}
+
+@media (min-width: 768px) {
+	
+	.publications-header {
+
+		&_info {
+			background-color: transparent;
+		}
+
+		&_box {
+			max-width: 410px;
+		}
+
+		&_name {
+			font-size: 3.6rem;
+		}
+
+	}
+
+}

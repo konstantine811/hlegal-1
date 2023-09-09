@@ -40,6 +40,11 @@
 	}
 
 	&_subtitle {
+		transition: .5s;
+		&:active {
+			color: $accent;
+			transition: .5s;
+		}
 	}
 
 	&_time {
@@ -93,6 +98,18 @@
 
 		&_card {
 			max-width: 281px;
+		}
+
+		&_subtitle {
+			transition: .5s;
+
+			&:hover {
+				color: $accent;
+				transition: .5s;
+			}
+		}
+
+		&_link {
 		}
 
 	}

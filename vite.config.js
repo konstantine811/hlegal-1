@@ -61,6 +61,28 @@ export default defineConfig({
             },
           },
         },
+        {
+          entry: 'pages/service/publications.js',
+          filename: 'publications.html',
+          template: 'pages/publications/publications.html',
+          injectOptions: {
+            data: {
+              title: 'Publications',
+              injectScript: `<script src="./publications.js"></script>`,
+            },
+          },
+        },
+        {
+          entry: 'pages/service/publications-entry.js',
+          filename: 'publications-entry.html',
+          template: 'pages/publications/publications-entry.html',
+          injectOptions: {
+            data: {
+              title: 'Publications Entry',
+              injectScript: `<script src="./publications-entry.js"></script>`,
+            },
+          },
+        },
       ],
     }),
     viteImagemin({
