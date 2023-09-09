@@ -1,0 +1,28 @@
+.service-header {
+
+	&_services {
+		display: block;
+	}
+
+	&_slash {
+		display: block;
+	}
+
+}
+
+
+@media (min-width: 768px) {
+	
+	.service-header {
+
+		&_services {
+			font-size: 3.6rem;
+		}
+
+		&_box {
+			max-width: 325px;
+		}
+
+	}
+
+}
