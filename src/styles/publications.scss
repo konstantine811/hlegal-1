@@ -87,6 +87,10 @@
 	
 	.publications {
 
+		&_box {
+			justify-content: space-around;
+		}
+
 		&_card {
 			max-width: 281px;
 		}

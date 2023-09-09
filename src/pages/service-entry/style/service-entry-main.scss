@@ -37,8 +37,7 @@
 
 		&:active {
 			transition: .3s;
-			background-color: $active-active;
-			box-shadow: 0px 0px 20px 0px rgba(36, 163, 255, 0.50);
+			color: $accent;
 		}
 	}
 }
@@ -66,6 +65,13 @@
 
 		&_box {
 			max-width: 904px;
+		}
+
+		&_link {
+			&:hover {
+				transition: .3s;
+				color: $accent;
+			}
 		}
 
 	}

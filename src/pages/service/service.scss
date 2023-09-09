@@ -7,9 +7,8 @@
 @import '../../styles/header.scss';
 @import '../../styles/nav.scss';
 @import '../../styles/footer.scss';
-@import '../../styles/publications.scss';
-@import './style/service-entry-header.scss';
-@import './style/service-entry-main.scss';
-@import './style/service-entry-service.scss';
-@import './style/service-entry-publications.scss';
-@import './style/pulsar.scss';
+@import '../service-entry/style/service-entry-header.scss';
+@import '../../styles/services.scss';
+@import './style/service-service.scss';
+@import '../../styles/trust.scss';
+@import './style/service-trust.scss';

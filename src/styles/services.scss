@@ -44,7 +44,14 @@
 	}
 
 	&_card-title {
+		display: block;
 		padding-bottom: 15px;
+		transition: .5s;
+
+		&:active {
+			color: $accent;
+			transition: .5s;
+		}
 	}
 
 	&_card-text {
@@ -104,6 +111,13 @@
 
 		&_box {
 			justify-content: space-between;
+		}
+
+		&_card-title {
+			&:hover {
+				transition: .5s;
+				color: $accent;
+			}
 		}
 
 	}
