@@ -1,0 +1,62 @@
+.main {
+	margin: 30px 0;
+
+	&_title {
+		background: $gradient-red-text;
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		line-height: normal;
+		width: 100%;
+	}
+
+}
+
+@media (min-width: 768px) {
+	
+	.main {
+		margin: 60px 0;
+
+		&_title {
+			font-size: 3.8rem;
+		}
+
+	}
+
+}
+
+@media (min-width: 1024px) {
+	
+	.main {
+
+		&_title {
+			max-width: 664px;
+		}
+
+	}
+
+}
+
+@media (min-width: 1440px) {
+	
+	.main {
+
+		&_title {
+			max-width: 1080px;
+		}
+
+	}
+
+}
+
+@media (min-width: 1920px) {
+	
+	.main {
+
+		&_title {
+			max-width: 1360px;
+		}
+
+	}
+
+}

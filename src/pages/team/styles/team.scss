@@ -1,0 +1,111 @@
+.team {
+	margin-bottom: 60px;
+	&_container {
+		gap: 30px;
+		max-width: 315px;
+		width: 100%;
+	}
+
+	&_card {
+		gap: 15px;
+		max-width: 315px;
+		width: 100%;
+	}
+
+	&_img {
+		width: 100%;
+		height: 300px;
+		object-fit: cover;
+		border-radius: 12px;
+	}
+
+	&_flex {
+		gap: 15px;
+	}
+
+	&_box {
+		gap: 5px;
+	}
+
+	&_title {
+	}
+
+	&_job {
+	}
+
+	&_arrow {
+		width: 32px;
+		height: 32px;
+		transform: rotate(-90deg);
+
+	}
+}
+
+@media (min-width: 768px) {
+	
+	.team {
+
+		&_container {
+			gap: 60px;
+			max-width: 648px;
+		}
+
+		&_card {
+			max-width: 294px;
+		}
+
+		&_img {
+			height: 400px;
+		}
+
+	}
+
+}
+
+@media (min-width: 1024px) {
+	
+	.team {
+
+		&_container {
+			max-width: 904px;
+		}
+
+		&_card {
+			max-width: 261px;
+		}
+
+	}
+
+}
+
+@media (min-width: 1440px) {
+	
+	.team {
+
+		&_container {
+			max-width: 1320px;
+		}
+
+		&_card {
+			max-width: 400px;
+		}
+
+	}
+
+}
+
+@media (min-width: 1920px) {
+	
+	.team {
+
+		&_container {
+			max-width: 1600px;
+		}
+
+		&_card {
+			max-width: 493px;
+		}
+
+	}
+
+}
