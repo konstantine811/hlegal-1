@@ -73,9 +73,9 @@ export default defineConfig({
           },
         },
         {
-          entry: 'pages/service/publications-entry.js',
+          entry: 'pages/publications-entry/publications-entry.js',
           filename: 'publications-entry.html',
-          template: 'pages/publications/publications-entry.html',
+          template: 'pages/publications-entry/publications-entry.html',
           injectOptions: {
             data: {
               title: 'Publications Entry',
