@@ -1,0 +1,28 @@
+.publications_container {
+	padding: 0 30px;
+}
+
+
+@media (min-width: 768px) {
+
+	.publications_container {
+		padding: 0 60px;
+	}
+
+}
+
+@media (min-width: 1440px) {
+
+	.publications_container {
+		padding: 0 180px;
+	}
+
+}
+
+@media (min-width: 1920px) {
+	
+	.publications_container {
+		padding: 0 280px;
+	}
+
+}
