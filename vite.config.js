@@ -83,6 +83,17 @@ export default defineConfig({
             },
           },
         },
+        {
+          entry: 'pages/contact/contact.js',
+          filename: 'contact.html',
+          template: 'pages/contact/contact.html',
+          injectOptions: {
+            data: {
+              title: 'Contact',
+              injectScript: `<script src="./contact.js"></script>`,
+            },
+          },
+        },
       ],
     }),
     viteImagemin({
