@@ -105,6 +105,17 @@ export default defineConfig({
             },
           },
         },
+        {
+          entry: 'pages/about/about.js',
+          filename: 'about.html',
+          template: 'pages/about/about.html',
+          injectOptions: {
+            data: {
+              title: 'About',
+              injectScript: `<script src="./about.js"></script>`,
+            },
+          },
+        },
       ],
     }),
     viteImagemin({
