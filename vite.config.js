@@ -94,6 +94,17 @@ export default defineConfig({
             },
           },
         },
+        {
+          entry: 'pages/team/team.js',
+          filename: 'team.html',
+          template: 'pages/team/team.html',
+          injectOptions: {
+            data: {
+              title: 'Team',
+              injectScript: `<script src="./team.js"></script>`,
+            },
+          },
+        },
       ],
     }),
     viteImagemin({
