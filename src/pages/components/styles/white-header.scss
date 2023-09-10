@@ -77,22 +77,6 @@
 
 @media (min-width: 768px) {
 
-	.bcg_box {
-		padding-right: 60px;
-	}
-	
-	.logo {
-
-		&_slash {
-			// display: none;
-		}
-
-		&_service {
-			// display: none;
-		}
-
-	}
-
 	.header {
 		padding: 50px 60px 0px 60px;
 
@@ -106,6 +90,7 @@
 		}
 
 		&_logo {
+			max-width: 408px;
 		}
 
 		&_info {
@@ -129,6 +114,14 @@
 	
 		&_link-facebook {
 			display: block;
+		}
+
+	}
+
+	.logo {
+
+		&_service {
+			font-size: 3.6rem;
 		}
 
 	}
