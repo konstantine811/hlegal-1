@@ -5,7 +5,7 @@ import babel from '@rollup/plugin-babel';
 
 export default defineConfig({
   base: '',
-  root: './src',
+  root: './src/',
 
   server: {
     port: 3000,
@@ -32,48 +32,61 @@ export default defineConfig({
           entry: 'index.js',
           filename: 'index.html',
           template: 'index.html',
-        },
-        {
-          entry: '/pages/service-entry/service-entry.js',
-          filename: 'service-entry.html',
-          template: '/pages/service-entry/service-entry.html',
-        },
-        {
-          entry: '/pages/service/service.js',
-          filename: 'service.html', // service.html будет сохранен в папку pages/service
-          template: '/pages/service/service.html',
           injectOptions: {
             data: {
-              title: 'Service',
-              injectScript: `<script src="./service.js"></script>`,
+              title: 'index',
+              injectScript: `<script src="./index.js"></script>`,
             },
           },
         },
+        // {
+        //   entry: '/pages/service-entry/service-entry.js',
+        //   filename: 'service-entry.html',
+        //   template: '/pages/service-entry/service-entry.html',
+        // },
+        // {
+        //   entry: '/pages/service/service.js',
+        //   filename: 'service.html',
+        //   template: '/pages/service/service.html',
+        //   injectOptions: {
+        //     data: {
+        //       title: 'Service',
+        //       injectScript: `<script src="./service.js"></script>`,
+        //     },
+        //   },
+        // },
+        // {
+        //   entry: '/pages/publications/publications.js',
+        //   filename: 'publications.html',
+        //   template: '/pages/publications/publications.html',
+        // },
+        // {
+        //   entry: '/pages/publications-entry/publications-entry.js',
+        //   filename: 'publications-entry.html',
+        //   template: '/pages/publications-entry/publications-entry.html',
+        // },
         {
-          entry: '/pages/publications/publications.js',
-          filename: 'publications.html',
-          template: '/pages/publications/publications.html',
-        },
-        {
-          entry: '/pages/publications-entry/publications-entry.js',
-          filename: 'publications-entry.html',
-          template: '/pages/publications-entry/publications-entry.html',
-        },
-        {
-          entry: '/pages/contact/contact.js',
+          entry: 'pages/contact/contact.js',
           filename: 'contact.html',
           template: '/pages/contact/contact.html',
+          outputPath: './pages',
+          injectOptions: {
+            data: {
+              title: 'Contact',
+              injectScript: `<script src="pages/contact/contact.js"></script>`,
+            },
+          },
         },
-        {
-          entry: '/pages/team/team.js',
-          filename: 'team.html',
-          template: '/pages/team/team.html',
-        },
-        {
-          entry: '/pages/about/about.js',
-          filename: 'about.html',
-          template: '/pages/about/about.html',
-        },
+        // {
+        //   entry: '/pages/team/team.js',
+        //   filename: 'team.html',
+        //   template: '/pages/team/team.html',
+        // },
+        // {
+        //   entry: '/pages/about/about.js',
+        //   filename: 'about.html',
+        //   template: '/pages/about/about.html',
+        // },
       ],
     }),
     viteImagemin({
