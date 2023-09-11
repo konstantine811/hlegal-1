@@ -1,10 +1,10 @@
-import { defineConfig } from 'vite'
-import { createHtmlPlugin } from 'vite-plugin-html'
-import viteImagemin from 'vite-plugin-imagemin'
-import babel from '@rollup/plugin-babel'
+import { defineConfig } from 'vite';
+import { createHtmlPlugin } from 'vite-plugin-html';
+import viteImagemin from 'vite-plugin-imagemin';
+import babel from '@rollup/plugin-babel';
 
 export default defineConfig({
-	base: '',
+  base: '',
   root: './src',
 
   server: {
@@ -32,28 +32,16 @@ export default defineConfig({
           entry: 'index.js',
           filename: 'index.html',
           template: 'index.html',
-          injectOptions: {
-            data: {
-              title: 'index',
-              injectScript: `<script src="./index.js"></script>`,
-            },
-          },
         },
         {
-          entry: 'pages/service-entry/service-entry.js',
-          filename: 'service.html',
-          template: 'pages/service-entry/service-entry.html',
-          injectOptions: {
-            data: {
-              title: 'Service Entry',
-              injectScript: `<script src="./service-entry.js"></script>`,
-            },
-          },
+          entry: '/pages/service-entry/service-entry.js',
+          filename: 'service-entry.html',
+          template: '/pages/service-entry/service-entry.html',
         },
         {
-          entry: 'pages/service/service.js',
-          filename: 'service.html',
-          template: 'pages/service/service.html',
+          entry: '/pages/service/service.js',
+          filename: 'service.html', // service.html будет сохранен в папку pages/service
+          template: '/pages/service/service.html',
           injectOptions: {
             data: {
               title: 'Service',
@@ -62,59 +50,29 @@ export default defineConfig({
           },
         },
         {
-          entry: 'pages/service/publications.js',
+          entry: '/pages/publications/publications.js',
           filename: 'publications.html',
-          template: 'pages/publications/publications.html',
-          injectOptions: {
-            data: {
-              title: 'Publications',
-              injectScript: `<script src="./publications.js"></script>`,
-            },
-          },
+          template: '/pages/publications/publications.html',
         },
         {
-          entry: 'pages/publications-entry/publications-entry.js',
+          entry: '/pages/publications-entry/publications-entry.js',
           filename: 'publications-entry.html',
-          template: 'pages/publications-entry/publications-entry.html',
-          injectOptions: {
-            data: {
-              title: 'Publications Entry',
-              injectScript: `<script src="./publications-entry.js"></script>`,
-            },
-          },
+          template: '/pages/publications-entry/publications-entry.html',
         },
         {
-          entry: 'pages/contact/contact.js',
+          entry: '/pages/contact/contact.js',
           filename: 'contact.html',
-          template: 'pages/contact/contact.html',
-          injectOptions: {
-            data: {
-              title: 'Contact',
-              injectScript: `<script src="./contact.js"></script>`,
-            },
-          },
+          template: '/pages/contact/contact.html',
         },
         {
-          entry: 'pages/team/team.js',
+          entry: '/pages/team/team.js',
           filename: 'team.html',
-          template: 'pages/team/team.html',
-          injectOptions: {
-            data: {
-              title: 'Team',
-              injectScript: `<script src="./team.js"></script>`,
-            },
-          },
+          template: '/pages/team/team.html',
         },
         {
-          entry: 'pages/about/about.js',
+          entry: '/pages/about/about.js',
           filename: 'about.html',
-          template: 'pages/about/about.html',
-          injectOptions: {
-            data: {
-              title: 'About',
-              injectScript: `<script src="./about.js"></script>`,
-            },
-          },
+          template: '/pages/about/about.html',
         },
       ],
     }),
@@ -146,4 +104,4 @@ export default defineConfig({
       },
     }),
   ],
-})
+});
