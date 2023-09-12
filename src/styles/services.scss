@@ -10,9 +10,6 @@
 		letter-spacing: 1px;
 	}
 
-	&_link-arrow {
-	}
-
 	&_title {
 		background: $gradient-red-text;
 		background-clip: text;
@@ -95,6 +92,24 @@
 
 		&_card {
 			max-width: 261px;
+		}
+
+		&_arrow-link {
+			transition: .5s;
+		}
+
+		&_link {
+			transition: .5s;
+		}
+
+	}
+
+	.services_link:hover {
+		transition: .5s;
+		color: $accent;
+		
+		.services_arrow-link {
+			stroke: $accent;
 		}
 
 	}

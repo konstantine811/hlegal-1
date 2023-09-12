@@ -10,16 +10,16 @@
 		text-align: center;
 	}
 
+	.main_img {
+		transition: .5s;
+	}
+
 	&_link {
 		width: 42px;
 		height: 42px;
-		border-radius: 50%;
-		border: 2px solid $grey-text;
 		margin-bottom: 30px;
 	}
 
-	&_img {
-	}
 }
 
 @media (min-width: 768px) {
@@ -36,6 +36,14 @@
 	
 	.main_title {
 		padding: 245px 0px 289px 0px;
+	}
+
+	.main_link {
+
+		&:hover .main_img {
+			transition: .5s;
+			stroke: $accent;
+		}
 	}
 
 }

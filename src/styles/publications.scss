@@ -97,7 +97,13 @@
 		}
 
 		&_card {
+			cursor: pointer;
 			max-width: 281px;
+			transition: .5s;
+			&:hover {
+				box-shadow: 10px 10px 50px;
+				transition: .5s;
+			}
 		}
 
 		&_subtitle {

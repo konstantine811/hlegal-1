@@ -90,3 +90,47 @@
 	}
 
 }
+
+@media (min-width: 1024px) {
+	
+	.footer {
+
+		&_address {
+			transition: .5s;
+		}
+
+		&_map-link {
+			transition: .5s;
+		}
+
+		&_map {
+			cursor: pointer;
+
+			&:hover .footer_address, &:hover .footer_map-link {
+				color: $accent;
+				transition: .5s;
+			}
+		}
+
+		&_tel, &_mail {
+			transition: .5s;
+
+			&:hover {
+				color: $accent;
+				transition: .5s;
+			}
+		}
+
+		&_facebook {
+			transition: .5s;
+			border-radius: 50%;
+			
+			&:hover {
+				transition: .5s;
+				background-color: $btn-shadow;
+			}
+		}
+
+	}
+
+}

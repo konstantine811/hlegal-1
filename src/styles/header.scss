@@ -176,7 +176,14 @@
 
 		&_address {
 			color: $basic-white;
+			transition: .5s;
+
+			&:hover {
+				transition: .5s;
+				color: $accent;
+			}
 		}
+
 
 		&_info {
 			grid-area: 1 / 2 / 2 / 3;
@@ -190,6 +197,38 @@
 
 		&_logo {
 			grid-area: 1 / 1 / 3 / 2;
+		}
+
+		&_facebook {
+			border-radius: 50%;
+			transition: .5s;
+
+			&:hover {
+				transition: .5s;
+				background-color: $accent;
+			}
+		}
+
+	}
+
+	.info_tel {
+		transition: .5s;
+
+		&:hover {
+			transition: .5s;
+			color: $accent;
+		}
+	}
+
+	.info {
+
+		&_lang {
+			transition: .5s;
+
+			&:hover {
+				transition: .5s;
+				background-color: $accent;
+			}
 		}
 
 	}

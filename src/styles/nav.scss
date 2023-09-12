@@ -1,5 +1,11 @@
+@import './components/variable.scss';
+
 .nav {
 	display: none;
+}
+
+.nav_item-active {
+	color: $accent;
 }
 
 @media (min-width: 768px) {
@@ -15,5 +21,18 @@
 		}
 	}
 	
+
+}
+
+@media (min-width: 1024px) {
+	
+	.nav_item {
+		transition: .5s;
+
+		&:hover {
+			transition: .5s;
+			color: $accent;
+		}
+	}
 
 }

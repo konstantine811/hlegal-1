@@ -128,6 +128,14 @@
 			padding: 0;
 		}
 
+		&_btn {
+			transition: .5s;
+
+			&:hover {
+				color: $accent;
+			}
+		}
+
 		&_box {
 			padding: 0;
 			max-width: 405px;
