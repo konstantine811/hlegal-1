@@ -170,6 +170,17 @@
 			}
 		}
 
+		.info {
+
+			&_lang {
+				&:hover {
+					transition: .5s;
+					color: $basic-white;
+				}
+			}
+
+		}
+
 
 	}
 
