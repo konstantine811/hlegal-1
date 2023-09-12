@@ -108,6 +108,12 @@
 		background-color: $active-regular;
 		box-shadow: 0px 0px 20px 0px $btn-shadow;
 		padding: 18px 30px;
+		transition: .5s;
+
+		&:active {
+			transition: .5s;
+			background-color: $active-active;
+		}
 	}
 }
 
@@ -142,6 +148,75 @@
 
 		&_form {
 			max-width: 422px
+		}
+
+		&_address {
+			transition: .5s;
+
+			&:hover {
+				transition: .5s;
+				color: $accent;
+			}
+		}
+
+		&_tel {
+			transition: .5s;
+
+			&:hover {
+				transition: .5s;
+				color: $accent;
+			}
+		}
+
+		&_mail {
+			transition: .5s;
+
+			&:hover {
+				transition: .5s;
+				color: $accent;
+			}
+		}
+
+		&_box-facebook {
+			transition: .5s;
+		}
+
+		.contact_facebook {
+			transition: .5s;
+			border-radius: 50%;
+		}
+
+		.contact_title {
+			transition: .5s;
+		}
+
+		&_box-facebook:hover {
+			
+			.contact_facebook {
+				transition: .5s;
+				background-color: $accent;
+			}
+		}
+
+		&_box-facebook:hover {
+
+			.contact_title {
+				transition: .5s;
+				color: $accent;
+			}
+		}
+
+	}
+
+	.form {
+
+		&_btn:hover {
+			background-color: $active-hover;
+			transition: .5s;
+		}
+
+		&_btn:active {
+			background-color: $active-active;
 		}
 
 	}
