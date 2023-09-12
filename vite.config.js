@@ -39,36 +39,36 @@ export default defineConfig({
             },
           },
         },
-        // {
-        //   entry: '/pages/service-entry/service-entry.js',
-        //   filename: 'service-entry.html',
-        //   template: '/pages/service-entry/service-entry.html',
-        // },
-        // {
-        //   entry: '/pages/service/service.js',
-        //   filename: 'service.html',
-        //   template: '/pages/service/service.html',
-        //   injectOptions: {
-        //     data: {
-        //       title: 'Service',
-        //       injectScript: `<script src="./service.js"></script>`,
-        //     },
-        //   },
-        // },
-        // {
-        //   entry: '/pages/publications/publications.js',
-        //   filename: 'publications.html',
-        //   template: '/pages/publications/publications.html',
-        // },
-        // {
-        //   entry: '/pages/publications-entry/publications-entry.js',
-        //   filename: 'publications-entry.html',
-        //   template: '/pages/publications-entry/publications-entry.html',
-        // },
+        {
+          entry: '/pages/service-entry/service-entry.js',
+          filename: 'service-entry.html',
+          template: 'pages/service-entry/service-entry.html',
+        },
+        {
+          entry: '/pages/service/service.js',
+          filename: 'service.html',
+          template: 'pages/service/service.html',
+          injectOptions: {
+            data: {
+              title: 'Service',
+              injectScript: `<script src="./service.js"></script>`,
+            },
+          },
+        },
+        {
+          entry: '/pages/publications/publications.js',
+          filename: 'publications.html',
+          template: 'pages/publications/publications.html',
+        },
+        {
+          entry: '/pages/publications-entry/publications-entry.js',
+          filename: 'publications-entry.html',
+          template: 'pages/publications-entry/publications-entry.html',
+        },
         {
           entry: 'pages/contact/contact.js',
           filename: 'contact.html',
-          template: '/pages/contact/contact.html',
+          template: 'pages/contact/contact.html',
           outputPath: './pages',
           injectOptions: {
             data: {
@@ -77,16 +77,16 @@ export default defineConfig({
             },
           },
         },
-        // {
-        //   entry: '/pages/team/team.js',
-        //   filename: 'team.html',
-        //   template: '/pages/team/team.html',
-        // },
-        // {
-        //   entry: '/pages/about/about.js',
-        //   filename: 'about.html',
-        //   template: '/pages/about/about.html',
-        // },
+        {
+          entry: '/pages/team/team.js',
+          filename: 'team.html',
+          template: 'pages/team/team.html',
+        },
+        {
+          entry: '/pages/about/about.js',
+          filename: 'about.html',
+          template: 'pages/about/about.html',
+        },
       ],
     }),
     viteImagemin({
