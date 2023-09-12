@@ -74,6 +74,36 @@
 			max-width: 261px;
 		}
 
+		&_title {
+			transition: .5s;
+		}
+
+		&_arrow {
+			transition: .5s;
+		}
+
+		&_arrow path {
+			transition: .5s;
+		}
+
+		&_flex {
+
+			&:hover .team_title {
+				color: $accent;
+				transition: .5s;
+			}
+
+			&:hover .team_arrow path {
+				transition: .5s;
+				stroke: $accent;
+			}
+
+			&:hover .team_arrow {
+				transition: .5s;
+				transform: rotate(0deg);
+			}
+		}
+
 	}
 
 }

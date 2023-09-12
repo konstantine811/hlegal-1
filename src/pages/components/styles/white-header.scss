@@ -138,6 +138,12 @@
 		}
 
 		&_address {
+			transition: .5s;
+
+			&:hover {
+				transition: .5s;
+				color: $accent;
+			}
 		}
 
 		&_info {
@@ -154,8 +160,39 @@
 			grid-area: 1 / 1 / 3 / 2;
 		}
 
+		&_facebook {
+			transition: .5s;
+			border-radius: 50%;
+
+			&:hover {
+				transition: .5s;
+				background-color: $accent;
+			}
+		}
+
+
 	}
 
+	.info {
+
+		&_tel {
+		transition: .5s;
+
+			&:hover {
+				transition: .5s;
+				color: $accent;
+			}
+		}
+
+		&_lang {
+			transition: .5s;
+
+			&:hover {
+				transition: .5s;
+				background-color: $accent;
+			}
+		}
+	}
 }
 
 @media (min-width: 1920px) {
