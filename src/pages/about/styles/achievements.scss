@@ -1,0 +1,148 @@
+@import '../../../styles/components/variable.scss';
+
+.achievements {
+	padding: 30px 0;
+
+	&_container {
+	}
+
+	&_box {
+		max-width: 255px;
+		width: 100%;
+		gap: 30px;
+	}
+
+	&_title {
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		line-height: normal;
+	}
+
+	&_box-img {
+		width: 100%;
+	}
+
+	&_item {
+		background-color: $w;
+		border-radius: 12px;
+		width: 100%;
+		padding: 25px 0;
+	}
+
+	&_img {
+		object-fit: contain;
+	}
+
+	&_img-none {
+		display: none;
+	}
+
+	&_box-circle {
+		gap: 14px;
+	}
+
+	&_circle {
+		width: 16px;
+		height: 16px;
+		border-radius: 50%;
+		background-color: $active-regular;
+		opacity: 0.2;
+	}
+
+	&_circle-active {
+		opacity: 1;
+	}
+
+	&_circle-none {
+	}
+}
+
+@media (min-width: 768px) {
+	
+	.achievements {
+
+		&_img-none {
+			display: flex;
+			justify-content: center;
+		}
+
+		&_box {
+			max-width: 648px;
+		}
+
+		&_box-img {
+			gap: 40px;
+		}
+
+		&_item {
+			max-width: 132px;
+		}
+
+		&_img {
+			max-width: 130px;
+			width: 100%;
+			height: 40px;
+		}
+
+		&_circle-none {
+			display: none;
+		}
+
+	}
+
+}
+
+@media (min-width: 1024px) {
+	
+	.achievements {
+
+		&_box {
+			max-width: 904px;
+		}
+
+		&_item {
+			max-width: 196px;
+		}
+
+		&_img {
+			max-width: 195px;
+			height: 60px;
+		}
+
+	}
+
+}
+
+@media (min-width: 1440px) {
+	
+	.achievements {
+
+		&_box {
+			max-width: 1320px;
+		}
+
+		&_item {
+			max-width: 300px;
+		}
+
+	}
+
+}
+
+@media (min-width: 1920px) {
+	
+	.achievements {
+
+		&_box {
+			max-width: 1600px;
+		}
+
+		&_item {
+			max-width: 370px;
+		}
+
+
+
+	}
+
+}
