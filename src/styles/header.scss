@@ -9,19 +9,21 @@
 }
 
 .bcg {
-
-	&_box {
-		position: absolute;
-    width: 100%;
+	&_box-img {
 		min-height: 100vh;
-    overflow: hidden;
-		padding-right: 10px;
+		background-image: url('/images/homepage/main/back-header.svg');
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+}
+
+@media (min-width: 900px) {
+	
+	.bcg_box-img {
+		background-size: contain;
 	}
 
-	&_img {
-		position: absolute;
-		height: 100%;
-	}
 }
 
 .header {
