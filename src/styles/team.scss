@@ -9,9 +9,11 @@
 	&_card {
 		border-radius: 12px;
 		background: $grey-bg-alt;
+		max-width: 100%;
 		}
 
 	&_img {
+		max-width: 100%;
 		width: 100%;
 	}
 
