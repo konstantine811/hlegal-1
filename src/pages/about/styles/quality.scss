@@ -1,0 +1,101 @@
+@import '../../../styles/components/variable.scss';
+
+.quality {
+	margin: 30px 0px 60px 0px;
+
+	&_container {
+		gap: 30px;
+		max-width: 315px;
+		width: 100%;
+	}
+
+	&_box {
+		gap: 30px;
+		width: 100%;
+	}
+
+	&_para {
+		line-height: 3rem;
+	}
+
+	&_title {
+		background: $gradient-red-text;
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		line-height: normal;
+		width: 100%;
+	}
+}
+
+@media (min-width: 768px) {
+	
+	.quality {
+		margin: 60px 0;
+
+		&_container {
+			max-width: 648px;
+		}
+
+		&_title {
+			font-size: 3.8rem;
+		}
+
+	}
+
+}
+
+@media (min-width: 1024px) {
+	
+	.quality {
+		
+		&_container {
+			max-width: 904px;
+			flex-direction: row;
+			gap: 60px;
+			flex-wrap: nowrap;
+		}
+
+		&_box {
+			max-width: 482px;
+		}
+
+		&_title {
+			max-width: 362px;
+		}
+
+	}
+
+}
+
+@media (min-width: 1440px) {
+	
+	.quality {
+
+		&_container {
+			max-width: 1080px;
+		}
+
+		&_box {
+			max-width: 658px;
+		}
+
+	}
+
+}
+
+@media (min-width: 1920px) {
+	
+	.quality {
+
+		&_container {
+			max-width: 1360px;
+		}
+
+		&_box {
+			max-width: 938px;
+		}
+
+	}
+
+}
