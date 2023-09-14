@@ -83,6 +83,11 @@ export default defineConfig({
           template: 'pages/team/team.html',
         },
         {
+          entry: '/pages/team-entry/team-entry.js',
+          filename: 'team-entry.html',
+          template: 'pages/team-entry/team-entry.html',
+        },
+        {
           entry: '/pages/about/about.js',
           filename: 'about.html',
           template: 'pages/about/about.html',

@@ -1,0 +1,183 @@
+@import '../../../styles/components/variable.scss';
+
+.main {
+	margin: 30px 0;
+	flex: 1 1 auto;
+
+	&_container {
+		max-width: 315px;
+		width: 100%;
+		gap: 30px;
+	}
+
+	&_box-img {
+		border-radius: 12px;
+	}
+
+	&_box-info {
+		gap: 10px;
+	}
+
+	&_img {
+		width: 100%;
+		height: 375px;
+		border-radius: 12px;
+		object-fit: cover;
+	}
+
+	&_box-title {
+		gap: 15px;
+	}
+
+	&_title {
+		background: $gradient-red-text;
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		line-height: normal;
+	}
+
+	&_subtitle {
+		line-height: 2.2rem;
+	}
+
+	&_link {
+		line-height: normal;
+		transition: .5s;
+	}
+
+	&_box-text {
+		gap: 30px;
+		padding-top: 30px;
+		border-top: 4px solid $grey-separator;
+	}
+
+	&_para {
+		line-height: 2.6rem;
+	}
+
+	&_box-name {
+		gap: 15px;
+	}
+
+	&_subname {
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		line-height: normal;
+	}
+}
+
+@media (min-width: 768px) {
+	
+	.main {
+		margin: 60px 0;
+
+		&_container {
+			max-width: 648px;
+			flex-wrap: wrap;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+
+		&_img {
+			max-width: 300px;
+			width: 100%;
+		}
+		
+		&_box-title {
+			max-width: 318px;
+			align-self: center;
+		}
+
+		&_box-text {
+			max-width: 648px;
+			width: 100%;
+		}
+
+	}
+
+}
+
+@media (min-width: 1024px) {
+	
+	.main {
+
+		&_container {
+			max-width: 904px;
+			display: grid;
+		}
+
+		&_box-title {
+			max-width: 544px;
+			grid-area: 1 / 2 / 2 / 3;
+		}
+
+		&_box-img {
+			grid-area: 1 / 1 /3 /1;
+		}
+
+		&_box-text {
+			max-width: 544px;
+			grid-area: 2 / 2 / 3 / 3;
+		}
+
+		&_link {
+			&:hover {
+				color: $accent;
+				transition: .5s;
+			}
+		}
+
+	}
+
+}
+
+@media (min-width: 1440px) {
+	
+	.main {
+
+		&_container {
+			max-width: 1080px;
+		}
+
+		&_box-title {
+			max-width: 620px;
+		}
+
+		&_box-text {
+			max-width: 620px;
+			grid-area: 2 / 2 / 2 / 3;
+		}
+
+		&_img {
+			max-width: 400px;
+			height: 500px;
+		}
+
+	}
+
+}
+
+@media (min-width: 1920px) {
+	
+	.main {
+
+		&_container {
+			max-width: 1360px;
+		}
+
+		&_box-title {
+			max-width: 900px;
+		}
+
+		&_box-img {
+			width: 400px;
+		}
+
+		&_box-text {
+			max-width: 900px;
+		}
+
+	}
+
+}
