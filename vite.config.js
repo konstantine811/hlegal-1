@@ -1,11 +1,12 @@
-import { defineConfig } from 'vite';
-import { createHtmlPlugin } from 'vite-plugin-html';
-import viteImagemin from 'vite-plugin-imagemin';
-import babel from '@rollup/plugin-babel';
+import { defineConfig } from "vite";
+import { createHtmlPlugin } from "vite-plugin-html";
+import viteImagemin from "vite-plugin-imagemin";
+import babel from "@rollup/plugin-babel";
+import Pages from "vite-plugin-pages";
 
 export default defineConfig({
-  base: '',
-  root: './src/',
+  base: "",
+  root: "./src/",
 
   server: {
     port: 3000,
@@ -14,67 +15,18 @@ export default defineConfig({
   },
 
   build: {
-    outDir: '../dist',
+    outDir: "../docs",
     rollupOptions: {
       plugins: [
         babel({
-          babelHelpers: 'bundled',
-          presets: ['@babel/preset-env'],
+          babelHelpers: "bundled",
+          presets: ["@babel/preset-env"],
         }),
       ],
     },
   },
   plugins: [
-    createHtmlPlugin({
-      minify: true,
-      pages: [
-        {
-          entry: 'index.js',
-          filename: 'index.html',
-          template: 'index.html',
-        },
-        {
-          entry: '/pages/service-entry/service-entry.js',
-          filename: 'service-entry.html',
-          template: '/pages/service-entry/service-entry.html',
-        },
-        {
-          entry: '/pages/service/service.js',
-          filename: 'service.html',
-          template: '/pages/service/service.html',
-        },
-        {
-          entry: '/pages/publications/publications.js',
-          filename: 'publications.html',
-          template: '/pages/publications/publications.html',
-        },
-        {
-          entry: '/pages/publications-entry/publications-entry.js',
-          filename: 'publications-entry.html',
-          template: '/pages/publications-entry/publications-entry.html',
-        },
-        {
-          entry: 'pages/contact/contact.js',
-          filename: 'contact.html',
-          template: '/pages/contact/contact.html',
-        },
-        {
-          entry: '/pages/team/team.js',
-          filename: 'team.html',
-          template: '/pages/team/team.html',
-        },
-        {
-          entry: '/pages/team-entry/team-entry.js',
-          filename: 'team-entry.html',
-          template: '/pages/team-entry/team-entry.html',
-        },
-        {
-          entry: '/pages/about/about.js',
-          filename: 'about.html',
-          template: '/pages/about/about.html',
-        },
-      ],
-    }),
+    Pages(),
     viteImagemin({
       gifsicle: {
         optimizationLevel: 7,
@@ -93,10 +45,10 @@ export default defineConfig({
       svgo: {
         plugins: [
           {
-            name: 'removeViewBox',
+            name: "removeViewBox",
           },
           {
-            name: 'removeEmptyAttrs',
+            name: "removeEmptyAttrs",
             active: false,
           },
         ],
